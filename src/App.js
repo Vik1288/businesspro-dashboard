@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   Navigate,
@@ -74,7 +74,7 @@ const App = () => {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <div className="app">
 
@@ -95,8 +95,6 @@ const App = () => {
 
           {/* =====================================
               NAVBAR
-
-              User profile Navbar ko pass kar rahe hain
           ===================================== */}
 
           <Navbar
@@ -225,7 +223,7 @@ const App = () => {
 
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
